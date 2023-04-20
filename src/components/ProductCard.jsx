@@ -1,12 +1,18 @@
 import { urlFor } from '../lib/client';
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import Card from 'react-bootstrap/Card';
+
+const StyledCard = styled(Card)`
+  max-width: 400px;
+`;
 
 const ProductCard = ({ product: {name, image, slug, price} }) => {
 
   const mainImage = urlFor(image && image[0]);
 
   return (
-    <>
+    <StyledCard>
       <Link to={`/products/${slug.current}`}>
         <img
           src={mainImage}
@@ -18,7 +24,7 @@ const ProductCard = ({ product: {name, image, slug, price} }) => {
       </Link>
       <p>{name}</p>
       <p>£{price}</p>
-    </>
+    </StyledCard>
   )
 }
 

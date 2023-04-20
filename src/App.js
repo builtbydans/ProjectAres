@@ -4,7 +4,7 @@ import { client } from "./lib/client";
 
 function App() {
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(null);
 
   useEffect(() => {
     const sanityQuery = '*[_type == "product"]'
@@ -15,12 +15,16 @@ function App() {
   }, [])
 
   return (
-    <div>
-      {products?.map((product) => {
-          return <ProductCard key={product._id} product={product} />
-        }
-      )}
-    </div>
+    <>
+      <img src="ares-logo.png" alt="ares-logo" height={25} />
+
+      <div className="container d-flex justify-content-between">
+        {products?.map((product) => {
+            return <ProductCard key={product._id} product={product} />
+          }
+        )}
+      </div>
+    </>
   );
 }
 
