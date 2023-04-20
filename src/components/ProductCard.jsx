@@ -4,8 +4,16 @@ import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
 
 const StyledCard = styled(Card)`
-  max-width: 400px;
+  border: none;
 `;
+
+const ImgContainer = styled.div`
+  height: 285px;
+`
+
+const ProductImg = styled.img`
+  height: 100%;
+`
 
 const ProductCard = ({ product: {name, image, slug, price} }) => {
 
@@ -14,16 +22,19 @@ const ProductCard = ({ product: {name, image, slug, price} }) => {
   return (
     <StyledCard>
       <Link to={`/products/${slug.current}`}>
-        <img
-          src={mainImage}
-          onMouseOver={(e) => e.currentTarget.src = urlFor(image && image[1])}
-          onMouseOut={(e) => e.currentTarget.src = mainImage}
-          height={350}
-          alt="boot_name"
-        />
+        <ImgContainer>
+          <ProductImg
+            src={mainImage}
+            onMouseOver={(e) => e.currentTarget.src = urlFor(image && image[1])}
+            onMouseOut={(e) => e.currentTarget.src = mainImage}
+            alt="boot_name"
+          />
+        </ImgContainer>
       </Link>
-      <p>{name}</p>
-      <p>£{price}</p>
+      <div>
+        <p>{name}</p>
+        <p>£{price}</p>
+      </div>
     </StyledCard>
   )
 }
