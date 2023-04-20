@@ -5,7 +5,7 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'ares_next',
+  title: 'ares_react',
 
   projectId: '7ubqefkj',
   dataset: 'production',
