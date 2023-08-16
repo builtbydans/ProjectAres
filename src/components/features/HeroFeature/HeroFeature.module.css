@@ -1,24 +1,29 @@
-h1 {
+.heroMain {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
-  font-size: 100px;
-  line-height: 1;
-  margin: 0;
-}
-
-.heroMain {
-  display: flex;
 }
 
 .heroLeft {
-  width: 60%;
+  width: 57%;
+}
+
+.heroTitle {
+  font-size: 110px;
+  line-height: 1;
+  letter-spacing: -5px;
+}
+
+.heroSubtitle {
+  line-height: 1;
+  margin-top: 2rem;
 }
 
 .heroRight {
   width: 40%;
   display: grid;
-  padding: 0;
-  margin: 0;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 15px;
