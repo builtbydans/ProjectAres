@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ProductCard from "./components/ProductCard";
 import { client } from "./lib/client";
+import Navbar from "./components/global/Navbar/Navbar";
 
-function App() {
+const App = () => {
 
   const [products, setProducts] = useState(null);
 
@@ -15,15 +15,8 @@ function App() {
   }, [])
 
   return (
-    <div className="container" style={{maxWidth: '1400px'}}>
-      <img className="mt-3" src="ares-logo.png" alt="ares-logo" height={25} />
-
-      <div className="mt-4 d-flex justify-content-between">
-        {products?.map((product) => {
-            return <ProductCard key={product._id} product={product} />
-          }
-        )}
-      </div>
+    <div style={{maxWidth: '85%', margin: '0 auto'}}>
+      <Navbar />
     </div>
   );
 }
