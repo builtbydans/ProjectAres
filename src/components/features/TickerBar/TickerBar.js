@@ -7,7 +7,7 @@ const TickerBar = () => {
       <Ticker>
       {() => (
         <a href='/' style={{ paddingRight: "4em", color: "white" }}>
-          20% off for Students*
+          20% off for Students†
         </a>
       )}
     </Ticker>
