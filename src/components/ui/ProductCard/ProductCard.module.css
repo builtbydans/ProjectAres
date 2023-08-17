@@ -1,18 +1,23 @@
 .productCard {
-  margin-top: 3rem;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;;
 }
 
 .productCard_ImgContainer {
   overflow: hidden;
-  max-width: 395px;
+  max-width: 390px;
   height: 400px;
-  object-fit: contain;
 }
 
 .productCard_Img {
-  max-width: 395px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.productCard_Details h3, p {
+  color: white;
 }
 
 .productCard_Details h3 {

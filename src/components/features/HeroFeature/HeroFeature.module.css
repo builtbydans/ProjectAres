@@ -1,4 +1,6 @@
-.heroMain {
+.hero_Container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -6,22 +8,24 @@
   text-transform: uppercase;
 }
 
-.heroLeft {
-  width: 57%;
+.hero_Left {
+  width: 45%;
 }
 
-.heroTitle {
+.hero_Title {
   font-size: 110px;
   line-height: 1;
   letter-spacing: -5px;
+  color: blue;
 }
 
-.heroSubtitle {
+.hero_Subtitle {
   line-height: 1;
   margin-top: 2rem;
 }
 
-.heroSignUp {
+.hero_Btn {
+  width: 100%;
   margin-top: 2rem;
   border: 2px solid black;
   background-color: white;
@@ -33,12 +37,14 @@
   font-weight: 900;
 }
 
-.heroSignUp:hover {
-  transform: scale(1.1);
+.hero_Btn:hover {
+  transform: scale(1.05);
+  background-color: blue;
+  color: white;
 }
 
-.heroRight {
-  width: 40%;
+.hero_Right {
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -46,25 +52,25 @@
   grid-row-gap: 15px;
 }
 
-.heroRightImageOne {
+.hero_RightImageOne {
   overflow: hidden;
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.heroRightImageTwo {
+.hero_RightImageTwo {
   overflow: hidden;
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.heroRightImageThree {
+.hero_RightImageThree {
   height: 300px;
   overflow: hidden;
   grid-area: 2 / 1 / 3 / 3;
 }
 
-.heroRightImageOne img,
-.heroRightImageTwo img,
-.heroRightImageThree img {
+.hero_RightImageOne img,
+.hero_RightImageTwo img,
+.hero_RightImageThree img {
   width: 100%;
   height: 100%;
   object-fit: cover;

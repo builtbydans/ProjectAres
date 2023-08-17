@@ -7,8 +7,12 @@ const Home = () => {
   return (
     <div>
       <HeroFeature />
-      <h2>Featured Products</h2>
-      <FeaturedProducts />
+      <section className={styles.featuredProducts_SectionOuter}>
+        <div className={styles.featuredProducts_SectionInner}>
+          <h2 className={styles.featuredProducts_SectionTitle}>Featured Products</h2>
+          <FeaturedProducts />
+        </div>
+      </section>
     </div>
   )
 }

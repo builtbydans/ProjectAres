@@ -1,0 +1,15 @@
+.featuredProducts_SectionOuter {
+  background-color: blue;
+}
+
+.featuredProducts_SectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: blue;
+  color: white;
+  padding: 1rem 0rem;
+}
+
+.featuredProducts_SectionTitle {
+  color: white;
+}

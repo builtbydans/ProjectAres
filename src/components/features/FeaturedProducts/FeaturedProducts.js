@@ -16,13 +16,12 @@ const FeaturedProducts = () => {
   }, [])
 
   return (
-    <div style={{display: 'flex', justifyContent: 'space-between'}}>
-
+    <section className={styles.featuredProducts_Container}>
       {products?.slice(0, 3).map((product) => {
         return <ProductCard key={product._id} product={product}  />
       })}
-
-    </div>
+      {/* <p>DELETE THIS. This is the Featured Products section. Not calling API to reduce usage</p> */}
+    </section>
   )
 }
 
