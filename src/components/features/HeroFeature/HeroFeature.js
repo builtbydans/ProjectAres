@@ -5,7 +5,7 @@ const HeroFeature = () => {
   return (
     <div className={styles.heroMain}>
 
-      <div className={styles.heroLeft}>
+      <section className={styles.heroLeft}>
         <h1 className={styles.heroTitle}>The Nike Dunk Low Panda 2.0</h1>
         <h2
           className={styles.heroSubtitle}>
@@ -13,10 +13,12 @@ const HeroFeature = () => {
           with classic details and throwback hoops style. Its padded, low-cut
           collar and vintage design lets you take your game anywhere—comfortably.
         </h2>
-        <button className={styles.heroSignUp}>Sign Up For Launch Day</button>
-      </div>
+        <a href="/">
+          <button className={styles.heroSignUp}>Sign Up For Launch Day</button>
+        </a>
+      </section>
 
-      <div className={styles.heroRight}>
+      <aside className={styles.heroRight}>
         <div className={styles.heroRightImageOne}>
           <img
             src="https://5.imimg.com/data5/ANDROID/Default/2022/7/WW/HK/NA/35945583/product-jpeg.jpg"
@@ -38,7 +40,7 @@ const HeroFeature = () => {
             srcset=""
           />
         </div>
-      </div>
+      </aside>
 
     </div>
   )
