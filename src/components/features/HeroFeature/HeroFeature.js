@@ -6,13 +6,14 @@ const HeroFeature = () => {
     <div className={styles.heroMain}>
 
       <div className={styles.heroLeft}>
-        <h1 className={styles.heroTitle}>The Future of The Nike Dunk Low</h1>
+        <h1 className={styles.heroTitle}>The Nike Dunk Low Panda 2.0</h1>
         <h2
           className={styles.heroSubtitle}>
           Created for the hardwood but taken to the streets, the Dunk returns
           with classic details and throwback hoops style. Its padded, low-cut
           collar and vintage design lets you take your game anywhere—comfortably.
         </h2>
+        <button className={styles.heroSignUp}>Sign Up For Launch Day</button>
       </div>
 
       <div className={styles.heroRight}>
