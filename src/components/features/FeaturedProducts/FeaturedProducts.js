@@ -17,10 +17,9 @@ const FeaturedProducts = () => {
 
   return (
     <section className={styles.featuredProducts_Container}>
-      {/* {products?.slice(0, 3).map((product) => {
+      {products?.slice(0, 3).map((product) => {
         return <ProductCard key={product._id} product={product}  />
-      })} */}
-      <p>DELETE THIS. This is the Featured Products section. Not calling API to reduce usage</p>
+      })}
     </section>
   )
 }
