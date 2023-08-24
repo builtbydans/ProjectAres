@@ -1,7 +1,7 @@
 .hero_Container {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 0px;
   display: flex;
   justify-content: space-between;
   font-family: 'Space Mono', monospace;
@@ -9,14 +9,14 @@
 }
 
 .hero_Left {
-  width: 45%;
+  width: 55%;
 }
 
 .hero_Title {
-  font-size: 110px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 9rem;
   line-height: 1;
   letter-spacing: -5px;
-  color: blue;
 }
 
 .hero_Subtitle {
@@ -44,7 +44,7 @@
 }
 
 .hero_Right {
-  width: 50%;
+  width: 40%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);

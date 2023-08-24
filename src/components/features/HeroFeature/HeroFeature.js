@@ -10,8 +10,7 @@ const HeroFeature = () => {
         <h2
           className={styles.hero_Subtitle}>
           Created for the hardwood but taken to the streets, the Dunk returns
-          with classic details and throwback hoops style. Its padded, low-cut
-          collar and vintage design lets you take your game anywhere—comfortably.
+          with classic details and throwback hoops style.
         </h2>
         <a href="/">
           <button className={styles.hero_Btn}>Sign Up For Launch Day</button>

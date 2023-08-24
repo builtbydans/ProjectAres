@@ -2,19 +2,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 1.5rem auto;
 }
 
-.aresLogo {
-  font-family: 'Space Mono', monospace;
-  font-weight: 900;
-  font-size: 2rem;
-  letter-spacing: -2.5px;
-}
 
-.aresLogo:hover {
-  color: #3b3b3b;
+.aresLogo {
+  height: 1.5rem;
 }
 
 ul li {

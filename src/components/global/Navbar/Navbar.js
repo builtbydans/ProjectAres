@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Navbar.module.css';
+import AresLogo from '../../../assets/images/ares-logo.png'
 
 const Navbar = () => {
   return (
@@ -8,9 +9,13 @@ const Navbar = () => {
         <a href='/'
           target='_blank'
           rel='noreferrer'
-          className={styles.aresLogo}
           >
-          ARES
+          <img
+            className={styles.aresLogo}
+            src={AresLogo}
+            alt=""
+            srcset=""
+          />
         </a>
       </div>
       <nav>

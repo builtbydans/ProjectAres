@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { client } from '../../../lib/client'
 import styles from './FeaturedProducts.module.css'
-import ProductCard from '../../ui/ProductCard/ProductCard'
+import ProductCard from '../ProductCard/ProductCard'
 
 const FeaturedProducts = () => {
 
